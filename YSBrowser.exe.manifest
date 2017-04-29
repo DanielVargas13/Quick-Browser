@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="YSBrowser.exe" version="1.0.0.4" publicKeyToken="4d1151d0211e0b65" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:publisher="Yash Sangai" co.v1:suiteName="Setup" asmv2:product="Quick Browser" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="YSBrowser" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="YSBrowser.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YSBrowser.exe" size="132600">
+      <assemblyIdentity name="YSBrowser" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Pute3L8BawfZxeKvd0tRemXY88UxCe03u3FHFXqQPIM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="YSBrowser.exe.config" size="234">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A4gobLZ2w7GwlbOOcjKsVba2p7o4i4d+Yyynpjr/P64=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YSBrowser.pdb" size="40448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1/U+8mv4DI3DLhhzaqAarPGqCGvhp1S2mAlJAsC7lvU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=YASH-UG2-3201\yash sangai" issuerKeyHash="0258c197425c8e372c1bf9eb77a979d9123babcf" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>u3L8EiIJTYR3P9A6At+qQI6oQB8gOgN2x5zcS0Ir/30=</DigestValue></Reference></SignedInfo><SignatureValue>goB17gWOKAG0915QyTCQ4OJVOaD9/lsULRg5ba0sgj2UyknHPU4MdgVkYYLwG4CI2LYoFA0v+8Plg8QQeifkJbTxDy6Kjqu+WZs49vg7CrezlxD1f+S/odw6Bb40eC4xIFjgSadokHA8sc/2JlVLL7hoNq9NxET5vTG3TJckLpk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sn/mgBmFMs/GX3zwRv2SSwRF+ibPf84rB1qFEVBFScvDcwf18t0mzOIRLHn72IAqVAk7S9VcgLDZtHPiAgGerrkuCLTxwLAIRfsHY/KDBFdEySPNKvFEusxNn0NueuyrevnnRmmJZwebi4smuE8J9HWhExq61+LoFeDiyYdrIbs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7dff2b424bdc9cc776033a201f40a88e40aadf023ad03f77844d092212fc72bb" Description="" Url=""><as:assemblyIdentity name="YSBrowser.exe" version="1.0.0.4" publicKeyToken="4d1151d0211e0b65" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=YASH-UG2-3201\yash sangai</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GPnXgATDKA43AZ2tbxBt4TJN7MR/9mI25mISAtTp4aA=</DigestValue></Reference></SignedInfo><SignatureValue>MpBtP5u85jcJRcZ8DSPGIln2rfMMo2xGGdcumSNuWCWt49c3rBCWtsfdkCDhSqO+1t/+/BpFsk427SIgOAjVd2YBdGCDfyNGkjUqwSVwzGeSHgzAR0ZkktvSS3UYbUYFnNQmYOStF4sV26cnXi6YPp/LJZs3CQlhWO0ttSOpFpY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sn/mgBmFMs/GX3zwRv2SSwRF+ibPf84rB1qFEVBFScvDcwf18t0mzOIRLHn72IAqVAk7S9VcgLDZtHPiAgGerrkuCLTxwLAIRfsHY/KDBFdEySPNKvFEusxNn0NueuyrevnnRmmJZwebi4smuE8J9HWhExq61+LoFeDiyYdrIbs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQK1Q3jqTlRoFMZ/06m7uOJzANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIAWQBBAFMASAAtAFUARwAyAC0AMwAyADAAMQBcAHkAYQBzAGgAIABzAGEAbgBnAGEAaTAeFw0xNjA2MDQxMjM1MDRaFw0xNzA2MDQxODM1MDRaMD0xOzA5BgNVBAMeMgBZAEEAUwBIAC0AVQBHADIALQAzADIAMAAxAFwAeQBhAHMAaAAgAHMAYQBuAGcAYQBpMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyf+aAGYUyz8ZffPBG/ZJLBEX6Js9/zisHWoURUEVJy8NzB/Xy3SbM4hEsefvYgCpUCTtL1VyAsNm0c+ICAZ6uuS4ItPHAsAhF+wdj8oMEV0TJI80q8US6zE2fQ2567Kt6+edGaYlnB5uLiya4Twn0daETGrrX4ugV4OLJh2shuwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGQ9nTPrjF5H5ZqCxrzV8LtUdKr2D/voS7zXTlPqUvLuWQivAJ5/M6BlmxRTSzwVRyckxADEQ3jjOmGlDJdseiZM6aRXk7GxfQSdwBOX94CTh5K9KrsbUAd0kg1VZ2hobA27DmVrD217qQVB9QW3ESl1ViLRAiP/QHaGm1Vv81Bm</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
